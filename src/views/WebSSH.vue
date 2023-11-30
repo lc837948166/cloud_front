@@ -102,23 +102,25 @@ export default {
   data() {
     return {
       nodes: [
-        { name: 'Master 1', ip: '192.168.91.129' },
-        { name: 'Worker 1', ip: '192.168.157.211' },
-        { name: 'Worker 2', ip: '192.168.157.212' },
-        { name: 'Worker 3', ip: '192.168.157.213' },
+        { name: 'Master 1', ip: '39.98.124.97' },
+        { name: 'Worker 1', ip: '39.101.136.242' },
+        { name: 'Worker 2', ip: '39.98.109.31' },
+        { name: 'Worker 3', ip: '39.99.252.93' },
         { name: 'Worker 4', ip: '192.168.157.214' },
         { name: 'Worker 5', ip: '192.168.157.215' },
         { name: 'Worker 6', ip: '192.168.157.216' },
         { name: 'Worker 7', ip: '192.168.157.217' },
+        { name: 'vm', ip: '192.168.243.143' },
+        { name: 'vmRemote', ip: '192.168.243.145' },
       ],
       terminal: null,
       wsshClient: new WSSHClient(),
       options: {
         operate: 'connect',
-        host: '192.168.91.129', // IP
+        host: '39.98.124.97', // IP
         port: '22', // ssh default port
-        username: 'abc',
-        password: 'abc',
+        username: 'root',
+        password: 'Upc123456@',
       },
       selectedNode: '',
       isFirstSet: true,
